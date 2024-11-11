@@ -106,7 +106,7 @@ prop_process() {
 }
 
 # Credits in acsii for "Re-Malwack Lite" + Intro
-ui_print " 
+$printf "%s\n" " 
    ____                __  __         _                         _      _      _  _         
   |  _ \   ___        |  \/  |  __ _ | |__      __  __ _   ___ | | __ | |    (_)| |_   ___ 
   | |_) | / _ \ _____ | |\/| | / _` || |\ \ /\ / / / _` | / __|| |/ / | |    | || __| / _ \
@@ -119,24 +119,24 @@ sleep 1
 ui_print "     Welcome to Re-Malwack Lite installation wizard!"
 ui_print " "
 sleep 1.5
-ui_print "     Installation will take less than 2 seconds ⚡"
-sleep 1.5
+ui_print "     Installation will take less only few seconds ⚡"
+sleep 1
 ui_print "     Please wait, We're downloading the latest hosts file to you...."
 host="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
-# Set perms
-chmod 644 "$hosts_file"
 # Go to internal storage 
 cd /sdcard
+hosts_file="/etc/hosts"
  # Download the hosts file with curl renaming it to hosts
 su -c /data/data/com.termux/files/usr/bin/curl -o hosts "$host";
 # Check if the file was downloaded successfully and exists
 if [ -f "hosts" ]; then
 # A mechanism to apply the new hosts file, takes advantage of files mirroring made by magisk and kernelSU.
-if [ -f "$hosts_file" ]; then
-mv /sdcard/hosts /data/adb/modules_update/Re-Malwack-Lite/system/etc
-echo ""
-echo "The new hosts file is downloaded successfully ✓"
-
+ if [ -f "$hosts_file" ]; then
+  mv /sdcard/hosts $MODPATH/system/etc
+  echo ""
+  echo "The new hosts file is downloaded successfully ✓"
+ fi
+fi
 # Check for min/max api version
 [ -z $MINAPI ] || { [ $API -lt $MINAPI ] && abort "! Your system API of $API is less than the minimum api of $MINAPI! Aborting!"; }
 [ -z $MAXAPI ] || { [ $API -gt $MAXAPI ] && abort "! Your system API of $API is greater than the maximum api of $MAXAPI! Aborting!"; }
