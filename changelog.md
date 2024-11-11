@@ -5,7 +5,7 @@
 - 🆕 Added ability to block Gambling & Fake news sites into the built-in tool.
 - 🆕 The module will now download updated hosts file during installation.
 - 🤩 Added some touches to the built-in tool :)
-- 🚀 Code optimization and perfomance enhancement
+- 🚀 Code optimization and perfomance enhancements.
 ---
 ## v5.1.0
 - ✨ First update for Re-Malwack.
