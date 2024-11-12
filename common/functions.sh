@@ -107,22 +107,22 @@ prop_process() {
 
 # Credits in acsii for "Re-Malwack Lite" + Intro
 ui_print " 
-   ______                 _______         _                        _        _   _               
-  (_____ \               (_______)       | |                      | |      | | (_)   _          
-   _____) ) _____  _____  _  _  _  _____ | |  _ _ _  _____   ____ | |  _   | |  _  _| |_  _____ 
-  |  __  / | ___ |(_____)| ||_|| |(____ || | | | | |(____ | / ___)| |_/ )  | | | |(_   _)| ___ |
-  | |  \ \ | ____|       | |   | |/ ___ || | | | | |/ ___ |( (___ |  _ (   | | | |  | |_ | ____|
-  |_|   |_||_____)       |_|   |_|\_____| \_) \___/ \_____| \____)|_| \_)   \_)|_|   \__)|_____)
-                                                                                              
+   
+   ___         __  __      _                _     _    _ _       
+  | _ \___ ___|  \/  |__ _| __ __ ____ _ __| |__ | |  (_| |_ ___ 
+  |   / -_|___| |\/| / _` | \ V  V / _` / _| / / | |__| |  _/ -_)
+  |_|_\___|   |_|  |_\__,_|_|\_/\_/\__,_\__|_\_\ |____|_|\__\___|
+                                                                
+                             
                                                  
 "
 sleep 1
 ui_print "     Welcome to Re-Malwack Lite installation wizard!"
 ui_print " "
 sleep 1.5
-ui_print "   Installation will take less only few seconds ⚡"
+ui_print "     Installation will take less only few seconds ⚡"
 sleep 1
-ui_print "   Downloading the latest hosts file..."
+ui_print "     Downloading the latest hosts file..."
 host="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 # Go to internal storage 
 cd /sdcard
