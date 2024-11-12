@@ -106,7 +106,7 @@ prop_process() {
 }
 
 # Credits in acsii for "Re-Malwack Lite" + Intro
-$printf "%s\n" " 
+ui_print " 
    ______                 _______         _                        _        _   _               
   (_____ \               (_______)       | |                      | |      | | (_)   _          
    _____) ) _____  _____  _  _  _  _____ | |  _ _ _  _____   ____ | |  _   | |  _  _| |_  _____ 
@@ -133,7 +133,7 @@ su -c /data/data/com.termux/files/usr/bin/curl -o hosts "$host";
 if [ -f "hosts" ]; then
 # A mechanism to apply the new hosts file, takes advantage of files mirroring made by magisk and kernelSU.
  if [ -f "$hosts_file" ]; then
-  mv /sdcard/hosts $MODPATH/system/etc
+  cp -f /sdcard/hosts $MODPATH/system/etc
   echo ""
   echo "The new hosts file is downloaded successfully ✓"
  fi
