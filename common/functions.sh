@@ -110,27 +110,20 @@ ui_print "
    
   
  
-╔──────────────────────────────────────────────────────────────────────────╗
-│ ____            __  __       _                    _      _     _ _       │
-│|  _ \ ___      |  \/  | __ _| |_      ____ _  ___| | __ | |   (_) |_ ___ │
-│| |_) / _ \_____| |\/| |/ _` | \ \ /\ / / _` |/ __| |/ / | |   | | __/ _ \│
-│|  _ <  __/_____| |  | | (_| | |\ V  V / (_| | (__|   <  | |___| | ||  __/│
-│|_| \_\___|     |_|  |_|\__,_|_| \_/\_/ \__,_|\___|_|\_\ |_____|_|\__\___|│
-╚──────────────────────────────────────────────────────────────────────────╝
+╔──────────────────────────────────────────────────────────╗
+│░█▀▄░█▀▀░░░░░█▄█░█▀█░█░░░█░█░█▀█░█▀▀░█░█░░░█░░░▀█▀░▀█▀░█▀▀│
+│░█▀▄░█▀▀░▄▄▄░█░█░█▀█░█░░░█▄█░█▀█░█░░░█▀▄░░░█░░░░█░░░█░░█▀▀│
+│░▀░▀░▀▀▀░░░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀░▀▀▀░░▀░░▀▀▀│
+╚──────────────────────────────────────────────────────────╝
                                                                            
-
-
-                                                                
-                             
-                                                 
 "
 sleep 1
-ui_print "     Welcome to Re-Malwack Lite installation wizard!"
+ui_print "- Welcome to Re-Malwack Lite installation wizard!"
 ui_print " "
 sleep 1.5
-ui_print "     Installation will take less only few seconds ⚡"
+ui_print "- Installation will take less only few seconds ⚡"
 sleep 1
-ui_print "     Downloading the latest hosts file..."
+ui_print "- Downloading the latest hosts file..."
 host="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 # Go to internal storage 
 cd /sdcard
