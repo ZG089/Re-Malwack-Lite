@@ -142,8 +142,7 @@ else
             cd /sdcard
             # Download the hosts file with curl renaming it to hosts
             su -c /data/data/com.termux/files/usr/bin/curl -o hosts "$host";
-            clear
-            echo "The new hosts file is downloaded successfully ✓"
+            echo "The new hosts file is downloaded & applied successfully ✓"
             # Check if the file was downloaded successfully and exists
             if [ -f "hosts" ]; then
             # A mechanism to apply the new hosts file, takes advantage of files mirroring made by magisk and kernelSU.
