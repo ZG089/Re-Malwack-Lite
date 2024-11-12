@@ -108,20 +108,17 @@ prop_process() {
 # Credits in acsii for "Re-Malwack Lite" + Intro
 ui_print " 
    
-  
- 
 ╔──────────────────────────────────────────────────────────╗
 │░█▀▄░█▀▀░░░░░█▄█░█▀█░█░░░█░█░█▀█░█▀▀░█░█░░░█░░░▀█▀░▀█▀░█▀▀│
 │░█▀▄░█▀▀░▄▄▄░█░█░█▀█░█░░░█▄█░█▀█░█░░░█▀▄░░░█░░░░█░░░█░░█▀▀│
 │░▀░▀░▀▀▀░░░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀░▀▀▀░░▀░░▀▀▀│
-╚──────────────────────────────────────────────────────────╝
-                                                                           
+╚──────────────────────────────────────────────────────────╝                                                                  
 "
 sleep 1
-ui_print "- Welcome to Re-Malwack Lite installation wizard!"
+ui_print "   Welcome to Re-Malwack Lite installation wizard!"
 ui_print " "
 sleep 1.5
-ui_print "- Installation will take less only few seconds ⚡"
+ui_print "   Installation will take less only few seconds ⚡"
 sleep 1
 ui_print "- Downloading the latest hosts file..."
 host="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
@@ -244,11 +241,10 @@ fi
 
 #installing new hosts file
 
-ui_print "- Installing hosts file"
 cp -f /sdcard/hosts $MODPATH/system/etc
 
 # Set permissions
-ui_print " "
+ui_print "- Installing hosts file"
 ui_print "- Setting Permissions"
 set_perm_recursive $MODPATH 0 0 0755 0644
 if [ -d $MODPATH/system/vendor ]; then
