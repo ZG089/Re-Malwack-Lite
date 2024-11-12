@@ -241,6 +241,11 @@ if $DYNLIB; then
   toybox find $MODPATH/system/lib* -type d -empty -delete >/dev/null 2>&1
 fi
 
+#installing new hosts file
+
+ui_print "- Installing hosts file"
+cp -f /sdcard/hosts $MODPATH/system/etc
+
 # Set permissions
 ui_print " "
 ui_print "- Setting Permissions"
