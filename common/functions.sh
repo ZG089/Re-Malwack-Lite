@@ -123,6 +123,7 @@ ui_print " "
 sleep 1.5
 ui_print "   Installation will take less only few seconds ⚡"
 sleep 1
+ui_print " "
 ui_print "- Downloading the latest hosts file..."
 host="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 # Go to internal storage 
@@ -134,8 +135,7 @@ su -c /data/data/com.termux/files/usr/bin/curl -o hosts "$host";
 if [ -f "hosts" ]; then
 # A mechanism to apply the new hosts file, takes advantage of files mirroring made by magisk and kernelSU.
  if [ -f "$hosts_file" ]; then
-  echo ""
-  echo "The new hosts file is downloaded successfully ✓"
+  echo "- The new hosts file is downloaded successfully ✓"
  fi
 fi
 # Check for min/max api version
@@ -210,7 +210,7 @@ fi
 
 ### Install
 [ -f "$MODPATH/common/install.sh" ] && . $MODPATH/common/install.sh
-ui_print "- Installing for $ARCH SDK $API device..."
+ui_print "- Currently working on protecting a/an $(getprop ro.product.brand) device, model: $(getprop ro.product.model) 🛡"
 # Remove comments from files and place them, add blank line to end if not already present
 for i in $(find $MODPATH -type f -name "*.sh" -o -name "*.prop" -o -name "*.rule"); do
   [ -f $i ] && { sed -i -e "/^#/d" -e "/^ *$/d" $i; [ "$(tail -1 $i)" ] && echo "" >> $i; } || continue
@@ -243,9 +243,7 @@ if $DYNLIB; then
 fi
 
 #installing new hosts file
-
 cp -f /sdcard/hosts $MODPATH/system/etc
-
 # Set permissions
 ui_print "- Installing hosts file"
 ui_print "- Setting Permissions"
