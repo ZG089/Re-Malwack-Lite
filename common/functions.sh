@@ -120,9 +120,9 @@ sleep 1
 ui_print "     Welcome to Re-Malwack Lite installation wizard!"
 ui_print " "
 sleep 1.5
-ui_print "     Installation will take less only few seconds ⚡"
+ui_print "   Installation will take less only few seconds ⚡"
 sleep 1
-ui_print "     Please wait, We're downloading the latest hosts file to you...."
+ui_print "   Downloading the latest hosts file..."
 host="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 # Go to internal storage 
 cd /sdcard
@@ -133,7 +133,6 @@ su -c /data/data/com.termux/files/usr/bin/curl -o hosts "$host";
 if [ -f "hosts" ]; then
 # A mechanism to apply the new hosts file, takes advantage of files mirroring made by magisk and kernelSU.
  if [ -f "$hosts_file" ]; then
-  cp -f /sdcard/hosts $MODPATH/system/etc
   echo ""
   echo "The new hosts file is downloaded successfully ✓"
  fi
