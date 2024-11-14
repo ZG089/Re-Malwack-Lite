@@ -93,8 +93,9 @@ Type``su -c rmlwk-lite`` on Termux to show up the help message which will output
 - [@person0z](https://github.com/Person0z) - Malwack Magisk module creator
 - [@topjohnwu](https://github.com/topjohnwu) - Magisk Creator
 - [@Zackptg5](https://github.com/Zackptg5/MMT-Extended) - Magisk Template Creator
-- [@StevenBlack](https://github.com/StevenBlack/hosts) Porn sites blocklist
-- [@Lightswitch05](https://github.com/Lightswitch05/hosts) /system/etc/hosts file
+- [@StevenBlack](https://github.com/StevenBlack/hosts) - Porn sites blocklist
+- [@Lightswitch05](https://github.com/Lightswitch05/hosts) - /system/etc/hosts file
+- [@GalaxyA14user](https://github.com/GalaxyA14user) - Fixing bugs + contribution to the Re-Malwack project
 - And Finally, YOU! For using my module :)
 
 # Donations
