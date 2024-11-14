@@ -22,19 +22,19 @@ else
     case "$1" in
         --reset)
 
-            chmod 644 "$hosts_file"
+            chmod 644 /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
             echo "Restored permissions for $hosts_file"
 
             # Reset Hosts file
-            echo "127.0.0.1 localhost" > "$hosts_file"
-            echo "::1 localhost" >> "$hosts_file"
+            echo "127.0.0.1 localhost" > /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
+            echo "::1 localhost" >> /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
 
             # Restore the original permissions
             chmod 644 "$hosts_file"
-            echo "Restored permissions for $hosts_file"
+            echo "Restored permissions Succesfully !"
 
             # Notify completion
-            echo "Restored $hosts_file to its original state"
+            echo "Restored hosts file to its original state"
             ;;
         --blockporn)
             host="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts" #76k entries
