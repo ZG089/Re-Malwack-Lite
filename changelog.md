@@ -1,9 +1,9 @@
 ## v5.2.0
 - ✨ Existence of Re-Malwack Lite
-- 🗜 Decreased hosts file size and changed source, for more lightweight and effective ad blocking experience!
+- 🗜  Decreased hosts file size and changed source, for more lightweight and effective ad blocking experience!
 - 🆕 Added "-h" argument, a short for "--help"
 - 🆕 Added ability to block Gambling & Fake news sites into the built-in tool.
-- 💥Fixed hosts update behaviour, now your changes won't be removed after updating hosts :)
+- 🛠️ Fixed hosts update behaviour, now your changes won't be removed after updating hosts :)
 - 🆕 The module will now download updated hosts file during installation.
 - 🤩 Added a special touch to the built-in tool :)
 - 🚀 Code optimization and perfomance enhancements.
