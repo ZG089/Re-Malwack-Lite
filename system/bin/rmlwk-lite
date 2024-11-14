@@ -45,7 +45,7 @@ else
                 # Check if the hosts file exists
                 if [ -f "hosts" ]; then
                     # Append the downloaded hosts to the current hosts file
-                    cat hosts >> /data/adb/modules/Re-Malwack_Lite/system/etc/hosts
+                    cat hosts >> /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
 
                     # Remove the downloaded hosts file
                     rm hosts
@@ -68,7 +68,7 @@ else
                 # Check if the hosts file exists
                 if [ -f "hosts" ]; then
                     # Append the downloaded hosts to the current hosts file
-                    cat hosts >> /data/adb/modules/Re-Malwack_Lite/system/etc/hosts
+                    cat hosts >> /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
 
                     # Remove the downloaded hosts file
                     rm hosts
@@ -91,7 +91,7 @@ else
                 # Check if the hosts file exists
                 if [ -f "hosts" ]; then
                     # Append the downloaded hosts to the current hosts file
-                    cat hosts >> /data/adb/modules/Re-Malwack_Lite/system/etc/hosts
+                    cat hosts >> /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
 
                     # Remove the downloaded hosts file
                     rm hosts
