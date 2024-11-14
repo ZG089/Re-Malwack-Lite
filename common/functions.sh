@@ -111,9 +111,9 @@ ui_print "
 │░█▀▄░█▀▀░░░░░█▄█░█▀█░█░░░█░█░█▀█░█▀▀░█░█│
 │░█▀▄░█▀▀░▄▄▄░█░█░█▀█░█░░░█▄█░█▀█░█░░░█▀▄│
 │░▀░▀░▀▀▀░░░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀│
-│░█░░░▀█▀░▀█▀░█▀▀                        │
-│░█░░░░█░░░█░░█▀▀                        │
-│░▀▀▀░▀▀▀░░▀░░▀▀▀                        │
+│░█░░░▀█▀░▀█▀░█▀▀                             │
+│░█░░░░█░░░█░░█▀▀                             │
+│░▀▀▀░▀▀▀░░▀░░▀▀▀                             │
 ╚────────────────────────────────────────╝
 "
 sleep 1
@@ -243,7 +243,7 @@ fi
 
 #installing new hosts file
 cp -f /sdcard/hosts $MODPATH/system/etc
-chmod 0644 0755 $MODPATH/system/etc/hosts
+chmod 0644 $MODPATH/system/etc/hosts
 # Set permissions
 ui_print "- Installing hosts file"
 ui_print "- Setting Permissions"
