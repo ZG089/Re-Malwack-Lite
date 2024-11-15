@@ -142,7 +142,7 @@ else
             cd /sdcard
             # Download the hosts file with curl renaming it to hosts
             su -c /data/data/com.termux/files/usr/bin/curl -o hosts "$host";
-            echo "The new hosts file is downloaded & applied successfully ✓"
+            echo "Applying....."
             # Check if the file was downloaded successfully and exists
             if [ -f "hosts" ]; then
             # Merging updates, with removal of duplicated entries
