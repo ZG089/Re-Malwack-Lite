@@ -23,14 +23,14 @@ else
         --reset)
 
             chmod 644 /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
-            echo "Restored permissions for $hosts_file"
+            echo "Restored permissions for hosts file"
 
             # Reset Hosts file
             echo "127.0.0.1 localhost" > /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
             echo "::1 localhost" >> /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
 
             # Restore the original permissions
-            chmod 644 "$hosts_file"
+            chmod 644 /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
             echo "Restored permissions Succesfully !"
 
             # Notify completion
@@ -51,7 +51,7 @@ else
                     rm hosts
 
                     # Echo that the entry has been added
-                    echo "Entries for blocking porn sites are added to $hosts_file"
+                    echo "Entries for blocking porn sites are added to hosts file"
                 else
                     echo "Error: Downloaded file hosts does not exist."
                 fi
@@ -74,7 +74,7 @@ else
                     rm hosts
 
                     # Echo that the entry has been added
-                    echo "Entries for blocking gambling sites are added to $hosts_file"
+                    echo "Entries for blocking gambling sites are added to hosts file"
                 else
                     echo "Error: Downloaded file hosts does not exist."
                 fi
@@ -97,7 +97,7 @@ else
                     rm hosts
 
                     # Echo that the entry has been added
-                    echo "Entries for fake news sites are added to $hosts_file"
+                    echo "Entries for fake news sites are added to hosts file"
                 else
                     echo "Error: Downloaded file hosts does not exist."
                 fi
@@ -113,7 +113,7 @@ else
                 domain="$2"
                 temp=$(mktemp)  # Create a temporary file
                 if su -c /data/data/com.termux/files/usr/bin/sed "/0\.0\.0\.0 $domain/d" "$hosts_file" > "$temp"; then
-                    if su -c /data/data/com.termux/files/usr/bin/mv "$temp" "$hosts_file"; then
+                    if su -c /data/data/com.termux/files/usr/bin/mv "$temp" /data/adb/modules/Re-Malwack-Lite/system/etc/hosts ; then
                         echo "Whitelisted $domain in $hosts_file"
                     else
                         echo "Error: Failed to replace $hosts_file with the modified content."
@@ -145,9 +145,9 @@ else
             echo "The new hosts file is downloaded & applied successfully ✓"
             # Check if the file was downloaded successfully and exists
             if [ -f "hosts" ]; then
-            # A mechanism to apply the new hosts file, takes advantage of files mirroring made by magisk and kernelSU.
+            # Merging updates, with removal of duplicated entries
                 if [ -f "$hosts_file" ]; then
-                    mv /sdcard/hosts /data/adb/modules/Re-Malwack-Lite/system/etc
+                    cat /sdcard/hosts /etc/hosts | sort | uniq > /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
                     echo ""
                     echo "Done ✓"
                 fi
