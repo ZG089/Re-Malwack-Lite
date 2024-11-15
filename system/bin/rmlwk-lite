@@ -114,12 +114,12 @@ else
                 temp=$(mktemp)  # Create a temporary file
                 if su -c /data/data/com.termux/files/usr/bin/sed "/0\.0\.0\.0 $domain/d" "$hosts_file" > "$temp"; then
                     if su -c /data/data/com.termux/files/usr/bin/mv "$temp" /data/adb/modules/Re-Malwack-Lite/system/etc/hosts ; then
-                        echo "Whitelisted $domain in $hosts_file"
+                        echo "Whitelisted $domain in hosts file"
                     else
-                        echo "Error: Failed to replace $hosts_file with the modified content."
+                        echo "Error: Failed to replace hosts file with the modified content."
                     fi
                 else
-                    echo "Error: Failed to remove $domain from $hosts_file."
+                    echo "Error: Failed to remove $domain from hosts file."
                 fi
                 echo "Done"
             fi
@@ -130,14 +130,14 @@ else
         else
             domain="$2"
             echo "0.0.0.0 $2" >> /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
-            echo "Done added your domain to the blacklist"
+            echo "Done added your domain to the hosts file to be blocked"
         fi
         ;;    
         --update-hosts)
             host="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 
             # Set perms
-            chmod 644 "$hosts_file"
+            chmod 644 /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
             # Go to internal storage 
             cd /sdcard
             # Download the hosts file with curl renaming it to hosts
