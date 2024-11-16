@@ -120,7 +120,7 @@ sleep 1
 ui_print "   Welcome to Re-Malwack Lite installation wizard!"
 ui_print " "
 sleep 1.5
-ui_print "   Installation will take less only few seconds ⚡"
+ui_print "   Installation will take only few seconds ⚡"
 sleep 1
 ui_print " "
 ui_print "- Downloading the latest hosts file..."
