@@ -132,7 +132,6 @@ hosts_file="/etc/hosts"
 su -c /data/data/com.termux/files/usr/bin/curl -o hosts "$host";
 # Check if the file was downloaded successfully and exists
 if [ -f "hosts" ]; then
-# A mechanism to apply the new hosts file, takes advantage of files mirroring made by magisk and kernelSU.
  if [ -f "$hosts_file" ]; then
   echo "- The new hosts file is downloaded successfully ✓"
  fi
@@ -242,10 +241,10 @@ if $DYNLIB; then
 fi
 
 #installing new hosts file
-cp -f /sdcard/hosts $MODPATH/system/etc
+ui_print "- Installing hosts file"
+cat /sdcard/hosts /etc/hosts | sort | uniq > $MODPATH/system/etc/hosts
 chmod 0644 $MODPATH/system/etc/hosts
 # Set permissions
-ui_print "- Installing hosts file"
 ui_print "- Setting Permissions"
 set_perm_recursive $MODPATH 0 0 0755 0644
 if [ -d $MODPATH/system/vendor ]; then
