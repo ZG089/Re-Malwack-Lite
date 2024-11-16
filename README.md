@@ -62,7 +62,7 @@ Type``su -c rmlwk-lite`` on Termux to show up the help message which will output
 > Do not use this module with any other ad blocker module, such as AdAway and Magisk's built-in systemless hosts module.
 
 > [!NOTE]
-> - For KernelSU users and for those who noticed that the hosts file isn't updated after running ``su -c rmlwk-lite --update-hosts``, install [Overlayfs](https://github.com/HuskyDG/magic_overlayfs) module, configure it and it will work. (if you need help configuring it then contact with me via Telegram or XDA)
+> For KernelSU users and for those who noticed that the hosts file isn't updated after running ``su -c rmlwk-lite --update-hosts``, install [Overlayfs](https://github.com/HuskyDG/magic_overlayfs) module, configure it and it will work. (if you need help configuring it then contact with me via Telegram or XDA)
 
 > [!TIP]
 > ## Total Blocked
@@ -75,7 +75,7 @@ Type``su -c rmlwk-lite`` on Termux to show up the help message which will output
 
 > [!TIP]
 > **How does the host's file block websites and what modifications were made?**
-> - How does it block websites: The host file blocks websites and malware by denying access for your phone to connect to it at all. It will just return a blank page. ``0.0.0.0 www.the-website-that-is-blocked.com``.
+> - here's how it blocks websites: The host file blocks websites and malware by denying access for your phone to connect to it at all. It will just return a blank page. ``0.0.0.0 www.the-website-that-is-blocked.com``.
 
 > [!TIP]
 > **Does it blocks in-app ads and in-game ads as well ?**
@@ -93,7 +93,7 @@ Type``su -c rmlwk-lite`` on Termux to show up the help message which will output
 - [@topjohnwu](https://github.com/topjohnwu) - Magisk Founder
 - [@Zackptg5](https://github.com/Zackptg5/MMT-Extended) - MMTE Template
 - [@StevenBlack](https://github.com/StevenBlack/hosts) - Porn sites blocklist
-- [@GalaxyA14user](https://github.com/GalaxyA14user) - Fixing bugs + contribution to the Re-Malwack project
+- [@GalaxyA14user](https://github.com/GalaxyA14user) - Fixing bugs + Contribution to the Re-Malwack project
 - [@forsaken-heart24](https://github.com/forsaken-heart24) - Contribution to the Re-Malwack Project
 - And Finally, YOU! For using my module :)
 
