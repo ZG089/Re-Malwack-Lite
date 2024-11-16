@@ -1,4 +1,4 @@
-# Credits in acsii for "Re-Malwack Lite" + Intro # [Luna] 5:44PM HUH?????????
+# Credits in acsii for "Re-Malwack Lite" + Intro # [Luna] 5:44PM HUH????????? # [ZG089] 1:30AM What? lol
 ui_print " 
 ╔────────────────────────────────────────╗
 │░█▀▄░█▀▀░░░░░█▄█░█▀█░█░░░█░█░█▀█░█▀▀░█░█│
@@ -12,7 +12,7 @@ ui_print "
 sleep 1
 ui_print "   Welcome to Re-Malwack Lite installation wizard!"
 ui_print " "
-sleep 1.5
+sleep 1
 ui_print "   The Installation will only take few seconds ⚡"
 sleep 1
 ui_print " "
@@ -39,8 +39,5 @@ ui_print "   Currently protecting a/an $(getprop ro.product.brand) device, model
 ui_print "   Installing hosts file"
 cat $TMPDIR/hosts /etc/hosts | sort | uniq > $MODPATH/system/etc/hosts
 chmod 0644 $MODPATH/system/etc/hosts
-
-# fake the installation duration by adding a sleep cmd to let users wait and think that 
-# this module is doing tons of jobs at once.
-sleep 1.5
-ui_print "      The module installation has been finished!"
+ui_print "   The module installation has been finished!"
+ui_print "   Reboot wen?"
