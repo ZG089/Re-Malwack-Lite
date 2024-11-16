@@ -17,7 +17,7 @@
 [![Donation](https://img.shields.io/badge/Support%20Development-black?&logo=buymeacoffee&logoColor=black&logoSize=auto&color=%23FFDD00&cacheSeconds=2&link=https%3A%2F%2Fbuymeacoffee.com%2Fzg089&link=https%3A%2F%2Fbuymeacoffee.com%2Fzg089)](https://buymeacoffee.com/zg089)
 
 ## Features
-- Same as [Malwack](https://github.com/Magisk-Modules-Alt-Repo/Malwack/#features) (Porn block, whitelist, reset hosts)
+- Same as [Malwack](https://github.com/Magisk-Modules-Alt-Repo/Malwack/#features) (P*rn block, whitelist, reset hosts)
 - 🚫 Has Blacklist Feature
 - ⛔ Blocks P*rn sites, fake news sites, and gambling sites
 - 🛠️ Hosts file is updated daily
@@ -29,12 +29,11 @@
 > [!IMPORTANT]
 > ## Requirements
 > - Requires [Termux](https://f-droid.org/en/packages/com.termux/) App.
-> - Requires internet connection in order to download hosts file during installation, otherwise it will use the bundled hosts file.
+> - Requires internet connection in order to download hosts file during installation.
 
 ## Download Module
 > [!TIP]
 > You can download the module from [Releases](https://github.com/ZG089/Re-Malwack/releases/latest) section.
-
 
 ## Get started
 > [!NOTE]
@@ -47,20 +46,20 @@
 Type``su -c rmlwk-lite`` on Termux to show up the help message which will output this:
 
 ```
-"Usage: rmlwk-lite [ --reset | --blockporn | --block-gambling | --block-fake |  --update-hosts | --blacklist <domain> | --whitelist <domain> | --help | -h ]"
+"Usage: rmlwk-lite [ --reset | --block-porn | --block-gambling | --block-fake | --update-hosts | --blacklist <domain> | --whitelist <domain> | --help | -h ]"
 "--update-hosts: Updates the hosts file"
 "--reset: Restore the hosts file to its original state. (Disable ads blocking)"
-"--blockporn: Block pornographic websites by adding entries to the hosts file."
+"--block-porn: Block pornographic websites by adding entries to the hosts file."
 "--block-gambling: Block gambling sites"
 "--block-fake: Block Fake news sites"
 "--whitelist <domain>: Remove the specified domain from the hosts file."
-"--blacklist <domain>: Adds domain to the hosts file to be blocked
+"--blacklist <domain>: Adds domain to the hosts file to be blocked"
 "--help: Display this help message."
-"-h: same as --help
+"-h: same as --help"
 ```
 
 > [!WARNING]
-> Do not use this module with any other ad blocker module, such as AdAway and Magisk's built-in systemless hosts module. They may get angry if they met each other, and may cause a war that will benefit no one.
+> Do not use this module with any other ad blocker module, such as AdAway and Magisk's built-in systemless hosts module.
 
 > [!NOTE]
 > - For KernelSU users and for those who noticed that the hosts file isn't updated after running ``su -c rmlwck-lite --update-hosts``, install [Overlayfs](https://github.com/HuskyDG/magic_overlayfs) module, configure it and it will work. (if you need help configuring it then contact with me via Telegram or XDA)
