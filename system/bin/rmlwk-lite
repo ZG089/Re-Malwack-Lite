@@ -31,7 +31,7 @@ else
 
             # Restore the original permissions
             chmod 644 /data/adb/modules/Re-Malwack-Lite/system/etc/hosts
-            echo "Restored permissions Succesfully !"
+            echo "Restored permissions succesfully !"
 
             # Notify completion
             echo "Restored hosts file to its original state"
