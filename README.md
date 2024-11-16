@@ -62,7 +62,7 @@ Type``su -c rmlwk-lite`` on Termux to show up the help message which will output
 > Do not use this module with any other ad blocker module, such as AdAway and Magisk's built-in systemless hosts module.
 
 > [!NOTE]
-> - For KernelSU users and for those who noticed that the hosts file isn't updated after running ``su -c rmlwck-lite --update-hosts``, install [Overlayfs](https://github.com/HuskyDG/magic_overlayfs) module, configure it and it will work. (if you need help configuring it then contact with me via Telegram or XDA)
+> - For KernelSU users and for those who noticed that the hosts file isn't updated after running ``su -c rmlwk-lite --update-hosts``, install [Overlayfs](https://github.com/HuskyDG/magic_overlayfs) module, configure it and it will work. (if you need help configuring it then contact with me via Telegram or XDA)
 
 > [!TIP]
 > ## Total Blocked
