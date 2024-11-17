@@ -53,7 +53,7 @@ set_permissions() {
 ##########################################################################################
 
 # ok.
-DO_WE_HAVE_ANYTHING_TO_EXTRACT=false
+DO_WE_HAVE_ANYTHING_TO_EXTRACT=true
 DO_WE_REALLY_NEED_ADDONS=false
 
 SKIPUNZIP=1
