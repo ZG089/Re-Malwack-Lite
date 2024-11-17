@@ -16,7 +16,7 @@ sleep 1
 ui_print "   The Installation will only take few seconds ⚡"
 sleep 1
 ui_print " "
-ui_print "   Downloading the latest hosts file..."
+ui_print "- Checking internet connection ..."
 
 # let's check do we have internet or not.
 if ! ping -w 1 google.com; then
@@ -25,6 +25,7 @@ if ! ping -w 1 google.com; then
 fi
 
  # Download the hosts file and save it as "hosts"
+ui_print "- Downloading hosts file..."
 wget "https://raw.githubusercontent.com/StevenBlack/hosts/refs/heads/master/hosts" $TMPDIR/hosts
 
 # let's see if the file was downloaded or not.
@@ -38,6 +39,6 @@ fi
 ui_print "   Currently protecting a/an $(getprop ro.product.brand) device, model: $(getprop ro.product.model) 🛡"
 ui_print "   Installing hosts file"
 cat $TMPDIR/hosts /etc/hosts | sort | uniq > $MODPATH/system/etc/hosts
+#set perms 
+chmod 0777 $MODPATH/system/bin/rmlwk-lite
 chmod 0644 $MODPATH/system/etc/hosts
-ui_print "   The module installation has been finished!"
-ui_print "   Reboot wen?"
