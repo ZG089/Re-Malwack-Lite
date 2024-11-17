@@ -25,7 +25,7 @@ if ! ping -w 1 google.com; then
 fi
 
  # Download the hosts file and save it as "hosts"
-wget "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" $TMPDIR/hosts
+wget "https://raw.githubusercontent.com/StevenBlack/hosts/refs/heads/master/hosts" $TMPDIR/hosts
 
 # let's see if the file was downloaded or not.
 if [ ! -f "$TMPDIR/hosts" ]; then
