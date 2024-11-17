@@ -30,14 +30,14 @@ wget "https://raw.githubusercontent.com/StevenBlack/hosts/refs/heads/master/host
 
 # let's see if the file was downloaded or not.
 if [ ! -f "$TMPDIR/hosts" ]; then
-	abort "   The file wasn't downloaded, please try again."
+	abort "- The file wasn't downloaded, please try again."
 else 
-	ui_print "   The new hosts file is downloaded successfully ✓"
+	ui_print "- The new hosts file is downloaded successfully ✓"
 fi
 
 # idk.
-ui_print "   Currently protecting a/an $(getprop ro.product.brand) device, model: $(getprop ro.product.model) 🛡"
-ui_print "   Installing hosts file"
+ui_print "- Currently protecting a/an $(getprop ro.product.brand) device, model: $(getprop ro.product.model) 🛡"
+ui_print "- Installing hosts file"
 cat $TMPDIR/hosts /etc/hosts | sort | uniq > $MODPATH/system/etc/hosts
 #set perms 
 chmod 0777 $MODPATH/system/bin/rmlwk-lite
