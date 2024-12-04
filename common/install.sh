@@ -21,7 +21,7 @@ ui_print "- Checking internet connection ..."
 # let's check do we have internet or not.
 if ! ping -w 1 google.com; then
 	ui_print "   This module requires internet connection to download"
-	abort "     Some utilities, please connect to a mobile network and try again."
+	abort "     Some utilities, please connect to the internet and try again."
 fi
 
  # Download the hosts file and save it as "hosts"
