@@ -1,4 +1,4 @@
-# Credits in acsii for "Re-Malwack Lite" + Intro # [Luna] 5:44PM HUH????????? # [ZG089] 1:30AM What? lol
+# Credits in acsii for "Re-Malwack Lite" + Intro 
 ui_print " 
 ╔────────────────────────────────────────╗
 │░█▀▄░█▀▀░░░░░█▄█░█▀█░█░░░█░█░█▀█░█▀▀░█░█│
